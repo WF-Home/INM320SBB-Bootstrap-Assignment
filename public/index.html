@@ -1,74 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Document</title>
-    <link href="/assets/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <div class="container">
-        <aside>
-            <nav class="nav flex-column">
-                <ul>
-                    <li>Overview</li>
-                    <li>Tickets</li>
-                    <li>Ideas</li>
-                    <li>Contacts</li>
-                    <li>Agents</li>
-                    <li>Articles</li>
-                    <li>Settings</li>
-                    <li>Subscription</li>
-                </ul>
-            </nav>
-        </aside>
-    <main class="flex-column">
-        <section id="Top nav">
-            <h1>Overview</h1>
-            <section id="icons">
-                
-            </section>
-            <section id="profile">
-                <h2 id="name">Wiljay Flores</h2>
-                <img src="" id="profile-photo">
-            </section>
-        </section>
-        <section id="summary">
-            <div class="card">
-                <h2>Cards</h2>
-            </div>
-            <div class="card">
-                <h2>Cards</h2>
-            </div>
-            <div class="card">
-                <h2>Cards</h2>
-            </div>
-            <div class="card">
-                <h2>Cards</h2>
-            </div>
-        </section>
-        <section id="graph-area">
-            <div id="graph-container">
-                <h3>Today's Trends</h3>
-                <div>
-                    <p id="last-updated">Sample date</p>
-                    <section id="legend">
-                        <div class="legend-pair">
-                            <img>
-                            <p>Today</p>
-                        </div>
-                        <div class="legend-pair">
-                            <img>
-                            <p>Yesterday</p>
-                        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">>
+        <link href="/assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="row">
+            <aside class="sidebar col-2 d-none d-md-block">
+                <nav class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+                    <ul class="nav flex-column">
+                        <li>Overview</li>
+                        <li>Tickets</li>
+                        <li>Ideas</li>
+                        <li>Contacts</li>
+                        <li>Agents</li>
+                        <li>Articles</li>
+                        <li>Settings</li>
+                        <li>Subscription</li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="col">
+                <section id="top-nav" class="row">
+                    <h1 class="col">Overview</h1>
+                    <section id="icons" class="col">        
                     </section>
-                </div>
-            </div>
-        </section>
-    </main>
-</body>
+                    <section id="profile" class="col">
+                        <h2 id="name">Wiljay Flores</h2>
+                        <img src="" id="profile-photo">
+                    </section>
+                </section>
+                <section id="summary-section" class="row row-cols-1 row-cols-sm-2 row-cols-md-4 mb-3 p-2 text-center">
+                    
+                </section>
+                <section id="graph-area">
+                    <div id="graph-container">
+                        <h3>Today's Trends</h3>
+                        <div>
+                            <p id="last-updated">Sample date</p>
+                            <section id="legend">
+                                <div class="legend-pair">
+                                    <img>
+                                    <p>Today</p>
+                                </div>
+                                <div class="legend-pair">
+                                    <img>
+                                    <p>Yesterday</p>
+                                </div>
+                            </section>
+                        </div>
+                        <img id="graph">
+                    </div>
+                </section>
+                <section id="graph-info">
+                    <ul>
+                        <li>
+                            <div class="graph-info-pair">
+                                <label class="info-pair-label">Resolved</label>
+                                <p class="info-pair-value"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="graph-info-pair">
+                                <label class="info-pair-label">Recieved</label>
+                                <p class="info-pair-value"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="graph-info-pair">
+                                <label class="info-pair-label"></label>
+                                <p class="info-pair-value"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="graph-info-pair">
+                                <label class="info-pair-label">Resolved</label>
+                                <p class="info-pair-value"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="graph-info-pair">
+                                <label class="info-pair-label">Resolved</label>
+                                <p class="info-pair-value"></p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    <script src="/assets/js/summaryCards.js"></script>
+    </body>
+</html>

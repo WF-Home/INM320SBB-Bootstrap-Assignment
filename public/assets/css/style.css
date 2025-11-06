@@ -1,0 +1,12 @@
+@import url("https://use.typekit.net/jxv0qyr.css");
+.summary-card {
+  font-family: "mulish-variable", sans-serif;
+}
+.summary-card > h4 {
+  font-size: 19px;
+}
+.summary-card > p {
+  font-size: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
