@@ -1,12 +1,24 @@
 @import url("https://use.typekit.net/jxv0qyr.css");
+main {
+  background-color: #F7F8FC;
+}
+
 .summary-card {
   font-family: "mulish-variable", sans-serif;
 }
 .summary-card > h4 {
+  color: #9FA2B4;
   font-size: 19px;
 }
 .summary-card > p {
   font-size: 40px;
+}
+.summary-card:hover {
+  border: 1px solid #3751FF;
+  color: #3751FF;
+}
+.summary-card:hover > h4 {
+  color: #3751FF;
 }
 
 /*# sourceMappingURL=style.css.map */
