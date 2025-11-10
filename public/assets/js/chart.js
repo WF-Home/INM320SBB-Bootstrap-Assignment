@@ -30,10 +30,6 @@ new Chart("Chart", {
   data: {
     labels: xValues,
     datasets: [{
-      data: [860,1140,1060,2210,7830,2478],
-      borderColor: "red",
-      fill: false
-    },{
       data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
       borderColor: "green",
       fill: false
