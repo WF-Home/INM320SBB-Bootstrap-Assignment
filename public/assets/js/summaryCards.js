@@ -14,7 +14,7 @@ function summaryContent(summaryItems) {
     summaryItems.forEach((item) => {
         template +=  `
         <div class="col">
-            <article class="summary-card card rounded-3 shadow-sm py-2">
+            <article class="summary-card card rounded-3 shadow-sm d-flex p-4 mb-3 mb-sm-0">
                 <h4 class="card-title">${item.label}</h4>
                 <p class="card-text">${item.value}</p>
             </article>

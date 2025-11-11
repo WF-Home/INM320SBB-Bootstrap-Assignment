@@ -1,11 +1,26 @@
 @import url("https://use.typekit.net/jxv0qyr.css");
 
+* {
+    font-family: "mulish-variable", sans-serif;
+}
+
 main {
     background-color: #F7F8FC;
 }
 
+.card-title {
+    color: #9FA2B4;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card-text {
+    font-size: 24px;
+}
+
 .summary-card {
-    font-family: "mulish-variable", sans-serif;
+
+    font-weight: 700;
 
     > h4 {
         color: #9FA2B4;
