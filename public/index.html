@@ -41,8 +41,8 @@
                 <!-- Contents are generated on summaryCards.js -->
                 <section id="summary-section" class="row row-cols-1 row-cols-sm-2 row-cols-md-4 mb-3 p-3 text-center"></section>
 
-                <section id="graph-area" class="row row-cols-1 row-cols-sm-2 card">
-                    <section id="graph-container" class="col col-sm-6">
+                <section id="graph-area" class="row row-cols-1 row-cols-sm-2 list-group list-group-horizontal px-4">
+                    <section id="graph-container" class="col col-sm-8 list-group-item">
                         <h3>Today's Trends</h3>
                         <div class="row">
                             <p id="last-updated" class="col">Sample date</p>
@@ -61,30 +61,7 @@
                         </div>
                         <canvas id="Chart" class="w-100"></canvas>
                     </section>
-                    <section id="graph-info" class="col col-sm-4">
-                        <ul class="list-group">
-                            <li class="list-group-item d-flex flex-column justify-content-center align-items-center py-3">
-                                <p class="card-title">Resolved</p>
-                                <p class="card-text">449</p>
-                            </li>
-                            <li class="list-group-item d-flex flex-column justify-content-center align-items-center py-3">
-                                <p class="card-title">Received</p>
-                                <p class="card-text">426</p>
-                            </li>
-                            <li class="list-group-item d-flex flex-column justify-content-center align-items-center py-3">
-                                <p class="card-title">Average first response time</p>
-                                <p class="card-text">33m</p>
-                            </li>
-                            <li class="list-group-item d-flex flex-column justify-content-center align-items-center py-3">
-                                <p class="card-title">Average response time</p>
-                                <p class="card-text">3h 8m</p>
-                            </li>
-                            <li class="list-group-item d-flex flex-column justify-content-center align-items-center py-3">
-                                <p class="card-title">Resolution within SLA</p>
-                                <p class="card-text">94%</p>
-                            </li>
-                        </ul>
-                    </section>
+                    <section id="graph-info" class="col col-sm-4 list-group-item p-0 border-0"></section>
                 </section>
                 <section id="info-section" class="row row-cols-1 row-cols-md-2 p-4 gx-3">
                     <section class="card col p-0">
@@ -141,5 +118,6 @@
     <script src="/assets/js/listView.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="/assets/js/chart.js"> </script>
+    <script src="/assets/js/graphInfo.js"> </script>
     </body>
 </html>
