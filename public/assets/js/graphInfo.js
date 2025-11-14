@@ -12,7 +12,7 @@ graphInfo.innerHTML = generateGraphTable(graphData);
 
 function generateGraphTable(graphData) {
 
-    let template = `<ul class="list-group">`;
+    let template = `<ul class="list-group h-100">`;
 
     graphData.forEach((data) => {
         template += `
