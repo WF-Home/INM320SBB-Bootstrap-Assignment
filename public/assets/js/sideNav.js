@@ -32,5 +32,5 @@ function generateSideNav(navItems) {
 }
 
 function generateListItem(item) {
-    return `<li class="nav-item py-2"><a><img src="${item.imageURL}">${item.label}</a></li>`;
+    return `<li class="nav-item py-2 regular-text sm-text"><a><img src="${item.imageURL}">${item.label}</a></li>`;
 }

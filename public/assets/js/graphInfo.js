@@ -8,7 +8,11 @@ const graphData = [
 
 let graphInfo = document.getElementById("graph-info");
 
+// Places Graph into HTML
+
 graphInfo.innerHTML = generateGraphTable(graphData);
+
+// Generates Graph Table
 
 function generateGraphTable(graphData) {
 
@@ -16,9 +20,9 @@ function generateGraphTable(graphData) {
 
     graphData.forEach((data) => {
         template += `
-        <li class="list-group-item d-flex flex-column justify-content-center align-items-center py-3">
-            <p class="card-title">${data.label}</p>
-            <p class="card-text">${data.value}</p>
+        <li class="list-group-item d-flex flex-column justify-content-center align-items-center py-4">
+            <p class="card-title sm-text semi-bold-text">${data.label}</p>
+            <p class="card-text large-text bold-text">${data.value}</p>
         </li>`
     });
 

@@ -12,8 +12,6 @@ main {
 
 .card-title {
     color: #9FA2B4;
-    font-size: 16px;
-    font-weight: 400;
 }
 
 .card-text {
@@ -22,15 +20,8 @@ main {
 
 .summary-card {
 
-    font-weight: 700;
-
     > h4 {
         color: #9FA2B4;
-        font-size: 19px;
-    }
-
-    > p {
-        font-size: 40px;
     }
 
     &:hover {
@@ -41,6 +32,41 @@ main {
            color: #3751FF; 
         }
     }
+}
+// Color 
+
+
+// Font Classes 
+
+.xs-text {
+    font-size: 14px;
+}
+
+.sm-text {
+    font-size: 16px;
+}
+
+.med-text {
+    font-size: 19px;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.xl-text {
+    font-size: 40px;
+}
+
+.regular-text {
+    font-weight: 400;
+} 
+
+.semi-bold-text {
+    font-weight: 600;
+}
+.bold-text {
+    font-weight: 700;
 }
 
 @media (min-width: 768px) {
