@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.typekit.net/jxv0qyr.css">
         <link href="/assets/css/style.css" rel="stylesheet">
     </head>
     <body class="container-fluid">
@@ -14,18 +13,8 @@
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"> 
                     <img src="/assets/images/sidebar/logo.svg">Dashboard Kit 
                 </a>
-                <nav class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
-                    <ul class="nav flex-column">
-                        <li><a><img src="/assets/images/sidebar/overview.svg">Overview</a></li>
-                        <li><a><img src="/assets/images/sidebar/tickets.svg">Tickets</a></li>
-                        <li><a><img src="/assets/images/sidebar/ideas.svg">Ideas</a></li>
-                        <li><a><img src="/assets/images/sidebar/contacts.svg">Contacts</a></li>
-                        <li><a><img src="/assets/images/sidebar/agents.svg">Agents</a></li>
-                        <li><a><img src="/assets/images/sidebar/articles.svg">Articles</a></li>
-                        <hr>
-                        <li><a><img src="/assets/images/sidebar/settings.svg">Settings</a></li>
-                        <li><a><img src="/assets/images/sidebar/subscription.svg">Subscription</a></li>
-                    </ul>
+                <nav id="sidenav" class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+                    
                 </nav>
             </aside>
             <main class="col">
@@ -75,7 +64,7 @@
                         <div class="card-body border-bottom-0 d-flex flex-row justify-content-between">
                             <div>
                                 <h4>Unresolved tickets</h4>
-                                <p>Group: Support</p>
+                                <p>Group: <span>Support</span></p>
                             </div>
                             <a>View Details</a>
                         </div>
@@ -126,10 +115,15 @@
                 </section>
             </main>
         </div>
+
+     <!-- Javascript Files -->   
+    <script src="/assets/js/sideNav.js"></script>
     <script src="/assets/js/summaryCards.js"></script>
     <script src="/assets/js/listView.js"></script>
+    <script src="/assets/js/graphInfo.js"> </script>
+
+    <!-- Chart.min.js is required to load before chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="/assets/js/chart.js"> </script>
-    <script src="/assets/js/graphInfo.js"> </script>
     </body>
 </html>
