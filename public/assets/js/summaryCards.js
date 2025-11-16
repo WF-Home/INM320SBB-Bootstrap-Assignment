@@ -15,8 +15,8 @@ function summaryContent(summaryItems) {
         template +=  `
         <div class="col">
             <article class="summary-card card rounded-3 shadow-sm d-flex p-4 mb-3 mb-sm-0">
-                <h4 class="card-title bold-text med-text">${item.label}</h4>
-                <p class="card-text bold-text xl-text">${item.value}</p>
+                <h4 class="card-title bold med-text">${item.label}</h4>
+                <p class="card-text bold xl-text">${item.value}</p>
             </article>
         </div>`
     });

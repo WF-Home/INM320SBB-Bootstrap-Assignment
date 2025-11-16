@@ -16,8 +16,8 @@ function unresolvedTicketContent(unresolvedTickets) {
     unresolvedTickets.forEach((ticket) => {
         template +=  `
         <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
-            <p class="m-0 py-2 xs-text primary-text semi-bold-text">${ticket.status}</p>
-            <p class="m-0 xs-text secondary-text semi-bold-text">${ticket.value}</p>
+            <p class="m-0 py-2 xs-text primary-text semi-bold">${ticket.status}</p>
+            <p class="m-0 xs-text secondary-text semi-bold">${ticket.value}</p>
         </li>`
     });
     return template;
@@ -40,8 +40,8 @@ function ticketActionsContent(actions) {
     
     template +=`
     <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
-        <input class="form-control form-control-sm border-0 secondary-light xs-text semi-bold-text" type="text" placeholder="Create New Task">
-        <button class="btn btn-light secondary-color px-3 med-text bold-text">+</button>
+        <input class="form-control form-control-sm border-0 secondary-light xs-text semi-bold" type="text" placeholder="Create New Task">
+        <button class="btn btn-light secondary-color px-3 med-text bold">+</button>
     </li>`;
 
     actions.forEach((action) => {
@@ -49,7 +49,7 @@ function ticketActionsContent(actions) {
         <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
             <label class="d-flex flex-row gap-3 align-items-center">
                 <input class="form-check-input flex-shrink-0 m-0 py-2" type="radio" name="listGroupRadios" id="listGroupRadios2" value="">
-                <p class="m-0 py-2 xs-text primary-text semi-bold-text">${action.label}</p>
+                <p class="m-0 py-2 xs-text primary-text semi-bold">${action.label}</p>
             </label>
             ${badgeType(action.badgeType)}
         </li>`
@@ -64,13 +64,13 @@ function badgeType(type) {
     let badge = ``
     switch (type) {
         case 1:     
-            badge = `<p class="badge text-bg-warning m-0 py-1 px-2 xxs-text semi-bold-text">URGENT</p>`;
+            badge = `<p class="badge text-bg-warning m-0 py-1 px-2 xxs-text semi-bold">URGENT</p>`;
             break;
         case 2:
-            badge = `<p class="badge text-bg-success m-0  py-1 px-2 xxs-text semi-bold-text">NEW</p>`;
+            badge = `<p class="badge text-bg-success m-0  py-1 px-2 xxs-text semi-bold">NEW</p>`;
             break;
         case 3:
-            badge = `<p class="badge text-bg-secondary m-0 py-1 px-2 xxs-text semi-bold-text">DEFAULT</p>`;
+            badge = `<p class="badge text-bg-secondary m-0 py-1 px-2 xxs-text semi-bold">DEFAULT</p>`;
             break;
         default:
             console.log("Invalid Badge Type");
