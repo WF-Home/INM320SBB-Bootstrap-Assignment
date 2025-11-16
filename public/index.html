@@ -55,15 +55,15 @@
                 </section>
 
                 <!-- Info Section Containing : Unresolved Tickets and Task Creation -->
-                <section id="info-section" class="row row-cols-1 row-cols-md-2 p-3 gx-3">
+                <section id="info-section" class="row row-cols-1 row-cols-md-2 p-3 gx-3 gy-3">
 
                     <!-- Unresolved Tickets View-->
                     <div class="col">
-                        <section class="card p-0">
+                        <section class="card p-0 h-100">
                             <div class="card-body px-3 pt-4 border-bottom-0 d-flex flex-row justify-content-between">
                                 <div>
                                     <h4 class="bold-text med-text">Unresolved tickets</h4>
-                                    <p class="mb-0 xxs-text">Group: <span>Support</span></p>
+                                    <p class="mb-0 xxs-text secondary-text">Group: <span class="primary-text">Support</span></p>
                                 </div>
                                 <a class="xs-text semi-bold-text accent-color text-decoration-none">View Details</a>
                             </div>
@@ -75,40 +75,14 @@
                     <!-- Task View Table -->
                     <div class="col">
                         <section class="card p-0 h-100">
-                            <div class="card-body p-4 border-bottom-0 d-flex flex-row justify-content-between">
+                            <div class="card-body px-3 pt-4 border-bottom-0 d-flex flex-row justify-content-between">
                                 <div>
-                                    <h4>Task</h4>
-                                    <p>Today</p>
+                                    <h4 class="bold-text med-text">Task</h4>
+                                    <p class="mb-0 xxs-text">Today</p>
                                 </div>
-                                <a>View All</a>
+                                <a class="xs-text semi-bold-text accent-color text-decoration-none">View All</a>
                             </div>
-                            <ul class="list-group border-top-0 list-group-flush">
-                                <li class="list-group-item d-flex flex-row justify-content-between">
-                                    <input class="form-control form-control-sm" type="text" placeholder="Create New Task">
-                                    <button>+</button>
-                                </li>
-                                <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
-                                    <label class="d-flex flex-row gap-3">
-                                        <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios2" value="">
-                                        <p>Finish ticket update</p>
-                                    </label>
-                                    <p class="badge text-bg-warning">Urgent</p>
-                                </li>
-                                <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
-                                    <label class="d-flex flex-row gap-3">
-                                        <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios2" value="">
-                                        <p>Create new ticket example</p>
-                                    </label>
-                                    <p class="badge text-bg-success">New</p>
-                                </li>
-                                <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
-                                    <label class="d-flex flex-row gap-3">
-                                        <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios2" value="">
-                                        <p>Update ticket report</p>
-                                    </label>
-                                    <p class="badge text-bg-secondary">Default</p>
-                                </li>
-                            </ul>
+                            <ul id="ticket-actions" class="list-group border-top-0 list-group-flush"></ul>
                         </section>
                     </div>
                 </section>

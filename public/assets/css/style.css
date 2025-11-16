@@ -3,6 +3,10 @@
   --bs-body-font-family: "Mulish", sans-serif;
 }
 
+.form-control::placeholder {
+  color: #C5C7CD;
+}
+
 main {
   background-color: #F7F8FC;
 }
@@ -72,6 +76,25 @@ main {
 
 .bold-text {
   font-weight: 700;
+}
+
+.badge {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+}
+
+.text-bg-warning {
+  color: #FFFFFF !important;
+  background-color: #FEC400 !important;
+}
+
+.text-bg-success {
+  background-color: #29CC97 !important;
+}
+
+.text-bg-secondary {
+  color: #9FA2B4 !important;
+  background-color: #F0F1F7 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

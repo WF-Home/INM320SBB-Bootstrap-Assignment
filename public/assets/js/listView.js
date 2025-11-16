@@ -1,3 +1,5 @@
+// Unresolved Tickets List
+
 const unresolvedTickets = [
     { status: "Waiting on Feature Request", value: 4238 },
     { status: "Awaiting Customer Response", value: 1005 },
@@ -19,4 +21,60 @@ function unresolvedTicketContent(unresolvedTickets) {
         </li>`
     });
     return template;
+}
+
+// Ticket Actions List
+
+let actions = [
+    {"label": "Finish ticket update", "badgeType": 1},
+    {"label": "Create new ticket example", "badgeType": 2},
+    {"label": "Update ticket report", "badgeType": 3}
+];
+
+let ticketActions = document.getElementById("ticket-actions");
+
+ticketActions.innerHTML = ticketActionsContent(actions);
+
+function ticketActionsContent(actions) {
+    let template = ``;
+    
+    template +=`
+    <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+        <input class="form-control form-control-sm border-0 secondary-light xs-text semi-bold-text" type="text" placeholder="Create New Task">
+        <button class="btn btn-light secondary-color px-3 med-text bold-text">+</button>
+    </li>`;
+
+    actions.forEach((action) => {
+        template += `
+        <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+            <label class="d-flex flex-row gap-3 align-items-center">
+                <input class="form-check-input flex-shrink-0 m-0 py-2" type="radio" name="listGroupRadios" id="listGroupRadios2" value="">
+                <p class="m-0 py-2 xs-text primary-text semi-bold-text">${action.label}</p>
+            </label>
+            ${badgeType(action.badgeType)}
+        </li>`
+    });
+
+    return template;
+}
+
+// Helper Functions 
+
+function badgeType(type) {
+    let badge = ``
+    switch (type) {
+        case 1:     
+            badge = `<p class="badge text-bg-warning m-0 py-1 px-2 xxs-text semi-bold-text">URGENT</p>`;
+            break;
+        case 2:
+            badge = `<p class="badge text-bg-success m-0  py-1 px-2 xxs-text semi-bold-text">NEW</p>`;
+            break;
+        case 3:
+            badge = `<p class="badge text-bg-secondary m-0 py-1 px-2 xxs-text semi-bold-text">DEFAULT</p>`;
+            break;
+        default:
+            console.log("Invalid Badge Type");
+    }
+
+    return badge;
 }
