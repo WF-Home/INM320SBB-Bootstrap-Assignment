@@ -22,7 +22,7 @@ new Chart("Chart", {
   },
   options: {
     legend: {
-      display: true, 
-      align: 'end'}
+      display: false
+    }
   }
 });

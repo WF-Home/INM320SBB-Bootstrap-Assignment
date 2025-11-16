@@ -31,24 +31,22 @@
                 <section id="summary-section" class="row row-cols-1 row-cols-sm-2 row-cols-md-4 mb-3 p-3 text-center"></section>
 
                 <section id="graph-area" class="row row-cols-1 row-cols-sm-2 list-group list-group-horizontal px-4">
-                    <section id="graph-container" class="col col-sm-8 list-group-item h-100">
-                        <h3>Today's Trends</h3>
-                        <div class="row">
-                            <p id="last-updated" class="col">Sample date</p>
-                            <section id="legend" class="col">
-                                <div class="row">
-                                    <div class="col legend-pair">
-                                        <img>
-                                        <p>Today</p>
-                                    </div>
-                                    <div class="col legend-pair">
-                                        <img>
-                                        <p>Yesterday</p>
-                                    </div>
+                    <section id="graph-container" class="col col-sm-8 list-group-item p-4">
+                        <h3 class="med-text primary-text bold">Today's Trends</h3>
+                        <div class="d-flex flex-sm-column flex-md-row justify-content-between mb-5">
+                            <p id="last-updated" class="m-0 secondary-text xxs-text regular">as of 25 May 2019, 09:41 PM</p> 
+                            <div class="d-flex end gap-3">
+                                <div class="d-flex gap-2">
+                                    <img src="/assets/images/divider/graph/today.svg" class="legend-icon">
+                                     <p class="m-0 secondary-text xxs-text regular">Today</p>
                                 </div>
-                            </section>
+                                <div class="d-flex gap-2">
+                                    <img src="/assets/images/divider/graph/yesterday.svg" class="legend-icon">
+                                     <p class="m-0 secondary-text xxs-text regular">Yesterday</p>
+                                </div>
+                            </div>
                         </div>
-                        <canvas id="Chart" class="w-100"></canvas>
+                        <canvas id="Chart" class="w-100 mh-100"></canvas>
                     </section>
                     <!-- Graph info table generated on graphInfo.js -->
                     <section id="graph-info" class="col col-sm-4 list-group-item p-0 border-0 h-100"></section>
