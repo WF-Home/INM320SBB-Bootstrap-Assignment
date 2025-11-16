@@ -18,14 +18,18 @@
                 <nav id="sidenav" class="offcanvas-body d-md-flex flex-column p-0 mt-4 pt-lg-3 overflow-y-auto"></nav>
             </aside>
             <main class="col">
-                <section id="top-nav" class="row p-4">
-                    <h1 class="col">Overview</h1>
-                    <section id="icons" class="col">        
-                    </section>
-                    <section id="profile" class="col">
-                        <h2 id="name">Wiljay Flores</h2>
-                        <img src="" id="profile-photo">
-                    </section>
+                <section id="top-nav" class="d-flex justify-content-between p-4">
+                    <h1 class="col large-text bold primary-text p-2">Overview</h1>
+                    <div class="d-flex">
+                        <section id="icons" class="d-none d-md-flex gap-3 pe-4"> 
+                            <img src="/assets/images/header/icon/search.svg">    
+                            <img src="/assets/images/header/icon/alert.svg">
+                        </section>
+                        <section id="profile" class="d-flex justify-content-center align-items-center gap-2 border-start ps-4">
+                            <h2 class="xs-text semi-bold m-0">Wiljay Flores</h2>
+                            <img src="/assets/images/wf.svg" class="rounded-circle border border-grey border-3">
+                        </section>
+                    </div>
                 </section>
 
                 <!-- Contents are generated on summaryCards.js -->

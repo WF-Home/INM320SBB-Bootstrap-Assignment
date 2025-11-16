@@ -11,6 +11,14 @@ main {
   background-color: #F7F8FC;
 }
 
+#icons img {
+  width: 16px;
+}
+
+#profile > img {
+  width: 44px;
+}
+
 #sidenavHeader {
   color: #A4A6B3;
 }
