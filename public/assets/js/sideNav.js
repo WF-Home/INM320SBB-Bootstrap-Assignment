@@ -33,10 +33,10 @@ function generateSideNav(navItems) {
 
 function generateListItem(item) {
     return `
-    <li id="sidenavItem" class="nav-item p-3 regular-text sm-text ${item.isActive ? "active-nav active-text" : ""}">
+    <li id="sidenavItem" class="nav-item p-3 regular-text sm-text ${item.isActive ? "active-nav" : ""}">
         <a class="d-flex flex-row gap-2 text-decoration-none align-items-center w-100">
             <img src="${item.imageURL}">
-            <p class="mb-0">${item.label}</p>
+            <p class="${item.isActive ? "active-text" : ""} mb-0">${item.label}</p>
         </a>
     </li>`;
 }
