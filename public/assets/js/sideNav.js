@@ -1,5 +1,5 @@
 let navItems = [
-    {"label": "Overview", "imageURL": "/assets/images/sidebar/overview.svg", "isAUserSetting": false},
+    {"label": "Overview", "imageURL": "/assets/images/sidebar/overview.svg", "isAUserSetting": false, "isActive": true},
     {"label": "Tickets", "imageURL": "/assets/images/sidebar/tickets.svg", "isAUserSetting": false},
     {"label": "Ideas", "imageURL": "/assets/images/sidebar/ideas.svg", "isAUserSetting": false},
     {"label": "Contacts", "imageURL": "/assets/images/sidebar/contacts.svg", "isAUserSetting": false},
@@ -32,5 +32,11 @@ function generateSideNav(navItems) {
 }
 
 function generateListItem(item) {
-    return `<li class="nav-item py-2 regular-text sm-text"><a><img src="${item.imageURL}">${item.label}</a></li>`;
+    return `
+    <li id="sidenavItem" class="nav-item p-3 regular-text sm-text ${item.isActive ? "active-nav active-text" : ""}">
+        <a class="d-flex flex-row gap-2 text-decoration-none align-items-center w-100">
+            <img src="${item.imageURL}">
+            <p class="mb-0">${item.label}</p>
+        </a>
+    </li>`;
 }

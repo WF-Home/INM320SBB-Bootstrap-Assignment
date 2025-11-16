@@ -9,12 +9,13 @@
     </head>
     <body class="container-fluid">
         <div class="row">
-            <aside class="sidebar col-2 d-none d-md-block text-bg-dark">
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"> 
-                    <img src="/assets/images/sidebar/logo.svg">Dashboard Kit 
+            <aside class="sidebar col-2 d-none p-0 d-md-block text-bg-dark">
+                <a href="/" id="sidenavHeader" class="d-flex med-text bold align-items-center p-3 gap-2 my-3 mb-md-0 me-md-auto text-decoration-none"> 
+                    <img src="/assets/images/sidebar/logo.svg">
+                    Dashboard Kit 
                 </a>
                 <!-- Generated on sideNav.js -->
-                <nav id="sidenav" class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto"></nav>
+                <nav id="sidenav" class="offcanvas-body d-md-flex flex-column p-0 mt-4 pt-lg-3 overflow-y-auto"></nav>
             </aside>
             <main class="col">
                 <section id="top-nav" class="row p-4">
@@ -32,6 +33,7 @@
 
                 <section id="graph-area" class="row row-cols-1 row-cols-sm-2 list-group list-group-horizontal px-4">
                     <section id="graph-container" class="col col-sm-8 list-group-item p-4">
+                        <!-- Chart Header -->
                         <h3 class="med-text primary-text bold">Today's Trends</h3>
                         <div class="d-flex flex-sm-column flex-md-row justify-content-between mb-5">
                             <p id="last-updated" class="m-0 secondary-text xxs-text regular">as of 25 May 2019, 09:41 PM</p> 
@@ -46,6 +48,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Chart -->
                         <canvas id="Chart" class="w-100 mh-100"></canvas>
                     </section>
                     <!-- Graph info table generated on graphInfo.js -->
