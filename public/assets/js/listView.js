@@ -37,13 +37,15 @@ ticketActions.innerHTML = ticketActionsContent(actions);
 
 function ticketActionsContent(actions) {
     let template = ``;
-    
+ 
+// Creates Input Box Row
     template +=`
     <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
         <input class="form-control form-control-sm border-0 secondary-light xs-text semi-bold" type="text" placeholder="Create New Task">
         <button class="btn btn-light secondary-color px-3 med-text bold">+</button>
     </li>`;
 
+// Creates Remaining Rows
     actions.forEach((action) => {
         template += `
         <li class="list-group-item d-flex flex-row justify-content-between align-items-center">

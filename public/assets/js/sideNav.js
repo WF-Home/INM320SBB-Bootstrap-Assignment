@@ -22,6 +22,9 @@ function generateSideNav(navItems) {
     let userSettingsTemplate = ``;
 
     navItems.forEach((item) => {
+
+        // Splits Nav Items into two sections
+        
         if (item.isAUserSetting) {
             userSettingsTemplate += generateListItem(item);
         } else {
