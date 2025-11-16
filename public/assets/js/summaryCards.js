@@ -1,3 +1,5 @@
+// Summary Items
+
 const summaryItems = [
     { label: "Unresolved", value: 60 },
     { label: "Overdue", value: 16 },
@@ -8,6 +10,8 @@ const summaryItems = [
 let summarySection = document.getElementById("summary-section");
 
 summarySection.innerHTML = summaryContent(summaryItems);
+
+// Summary Card Template
 
 function summaryContent(summaryItems) {
     let template = ``;
