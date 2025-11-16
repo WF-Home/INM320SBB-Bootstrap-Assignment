@@ -11,14 +11,6 @@ main {
   background-color: #F7F8FC;
 }
 
-.card-title {
-  color: #9FA2B4;
-}
-
-.card-text {
-  font-size: 24px;
-}
-
 .summary-card > h4 {
   color: #9FA2B4;
 }
@@ -66,15 +58,15 @@ main {
   font-size: 40px;
 }
 
-.regular-text {
+.regular {
   font-weight: 400;
 }
 
-.semi-bold-text {
+.semi-bold {
   font-weight: 600;
 }
 
-.bold-text {
+.bold {
   font-weight: 700;
 }
 
