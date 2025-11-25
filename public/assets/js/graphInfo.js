@@ -1,16 +1,14 @@
-const graphData = [
-    {"label": "Resolved", "value": 449},
-    {"label": "Received", "value": 426},
-    {"label": "Average first response time", "value": "33m"},
-    {"label": "Average response time", "value": "3h 8m"},
-    {"label": "Resolution within SLA", "value": "94%"}
-]
+// Graph Info Section HTML
 
 let graphInfo = document.getElementById("graph-info");
 
-// Places Graph into HTML
+// Fetches Data then Places Table in HTML
 
-graphInfo.innerHTML = generateGraphTable(graphData);
+dataFetcher().then(
+    function(value) { 
+        graphInfo.innerHTML = generateGraphTable(value.graphData);
+    }
+)
 
 // Generates Graph Table
 

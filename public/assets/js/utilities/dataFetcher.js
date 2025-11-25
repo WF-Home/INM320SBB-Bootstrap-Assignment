@@ -1,13 +1,12 @@
-
 async function dataFetcher() {
     try {
         const jsonContent = await fetch( '/assets/data/content.json' );
         // console.log( foobar );
-        const data = await jsonContent.json();
-        return data;
+        const dataObj = await jsonContent.json();
+        return dataObj.data
     } catch( error ) {
         console.warn( `😒 Nope: ${error}` );
     }
 }
 
-let data = dataFetcher();
+
