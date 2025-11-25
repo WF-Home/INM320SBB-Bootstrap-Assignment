@@ -1,19 +1,14 @@
-// Navigation Items
-
-let navItems = [
-    {"label": "Overview", "imageURL": "/assets/images/sidebar/overview.svg", "isAUserSetting": false, "isActive": true},
-    {"label": "Tickets", "imageURL": "/assets/images/sidebar/tickets.svg", "isAUserSetting": false},
-    {"label": "Ideas", "imageURL": "/assets/images/sidebar/ideas.svg", "isAUserSetting": false},
-    {"label": "Contacts", "imageURL": "/assets/images/sidebar/contacts.svg", "isAUserSetting": false},
-    {"label": "Agents", "imageURL": "/assets/images/sidebar/agents.svg", "isAUserSetting": false},
-    {"label": "Articles", "imageURL": "/assets/images/sidebar/articles.svg", "isAUserSetting": false},
-    {"label": "Settings", "imageURL": "/assets/images/sidebar/settings.svg", "isAUserSetting": true},
-    {"label": "Subscription", "imageURL": "/assets/images/sidebar/subscription.svg", "isAUserSetting": true},
-];
+// Side Nav
 
 let sidenav = document.getElementById("sidenav");
 
-sidenav.innerHTML = generateSideNav(navItems);
+// Data Fetcher 
+
+dataFetcher().then(
+    function(data) { 
+        sidenav.innerHTML = generateSideNav(data.navItems);
+    }
+)
 
 // Generates Side Nav
 

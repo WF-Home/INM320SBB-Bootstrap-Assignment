@@ -1,15 +1,14 @@
 // Summary Items
 
-const summaryItems = [
-    { label: "Unresolved", value: 60 },
-    { label: "Overdue", value: 16 },
-    { label: "Open", value: 43 },
-    { label: "On hold", value: 64 }
-]
-
 let summarySection = document.getElementById("summary-section");
 
-summarySection.innerHTML = summaryContent(summaryItems);
+// Data Fetcher
+
+dataFetcher().then(
+    function(data) { 
+        summarySection.innerHTML = summaryContent(data.summaryItems);
+    }
+)
 
 // Summary Card Template
 

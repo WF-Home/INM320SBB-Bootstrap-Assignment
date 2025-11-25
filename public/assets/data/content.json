@@ -10,7 +10,7 @@
             {"label": "Settings", "imageURL": "/assets/images/sidebar/settings.svg", "isAUserSetting": true},
             {"label": "Subscription", "imageURL": "/assets/images/sidebar/subscription.svg", "isAUserSetting": true}
         ],
-        "summaryCards" : [
+        "summaryItems" : [
             { "label": "Unresolved", "value": 60 },
             { "label": "Overdue", "value": 16 },
             { "label": "Open", "value": 43 },
