@@ -1,16 +1,18 @@
-// Unresolved Tickets List
-
-const unresolvedTickets = [
-    { status: "Waiting on Feature Request", value: 4238 },
-    { status: "Awaiting Customer Response", value: 1005 },
-    { status: "Awaiting Developer Fix", value: 914 },
-    { status: "Pending", value: 281 }
-]
+// Unresolved Tickets + Ticket Actions List
 
 let unresolvedTicketsSection = document.getElementById("unresolved-tickets");
+let ticketActions = document.getElementById("ticket-actions");
 
-unresolvedTicketsSection.innerHTML = unresolvedTicketContent(unresolvedTickets);
+// Data Fetcher 
 
+dataFetcher().then(
+    function(data) { 
+        unresolvedTicketsSection.innerHTML = unresolvedTicketContent(data.unresolvedTickets);
+        ticketActions.innerHTML = ticketActionsContent(data.ticketActions);;
+    }
+)
+
+// Generates Unresolved Ticket List
 function unresolvedTicketContent(unresolvedTickets) {
     let template = ``;
     unresolvedTickets.forEach((ticket) => {
@@ -23,17 +25,7 @@ function unresolvedTicketContent(unresolvedTickets) {
     return template;
 }
 
-// Ticket Actions List
-
-let actions = [
-    {"label": "Finish ticket update", "badgeType": 1},
-    {"label": "Create new ticket example", "badgeType": 2},
-    {"label": "Update ticket report", "badgeType": 3}
-];
-
-let ticketActions = document.getElementById("ticket-actions");
-
-ticketActions.innerHTML = ticketActionsContent(actions);
+// Generates Ticket Actions List
 
 function ticketActionsContent(actions) {
     let template = ``;

@@ -28,6 +28,11 @@
             { "status": "Awaiting Customer Response", "value": 1005 },
             { "status": "Awaiting Developer Fix", "value": 914 },
             { "status": "Pending", "value": 281 }
+        ],
+        "ticketActions" : [
+            {"label": "Finish ticket update", "badgeType": 1},
+            {"label": "Create new ticket example", "badgeType": 2},
+            {"label": "Update ticket report", "badgeType": 3}
         ]
     }
 

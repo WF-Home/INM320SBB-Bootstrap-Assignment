@@ -5,8 +5,8 @@ let graphInfo = document.getElementById("graph-info");
 // Fetches Data then Places Table in HTML
 
 dataFetcher().then(
-    function(value) { 
-        graphInfo.innerHTML = generateGraphTable(value.graphData);
+    function(data) { 
+        graphInfo.innerHTML = generateGraphTable(data.graphData);
     }
 )
 
