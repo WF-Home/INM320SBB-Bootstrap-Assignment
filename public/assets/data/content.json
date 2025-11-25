@@ -1,14 +1,14 @@
 {
     "data" : {
         "navItems" : [
-            {"label": "Overview", "imageURL": "/assets/images/sidebar/overview.svg", "isAUserSetting": false, "isActive": true},
-            {"label": "Tickets", "imageURL": "/assets/images/sidebar/tickets.svg", "isAUserSetting": false},
-            {"label": "Ideas", "imageURL": "/assets/images/sidebar/ideas.svg", "isAUserSetting": false},
-            {"label": "Contacts", "imageURL": "/assets/images/sidebar/contacts.svg", "isAUserSetting": false},
-            {"label": "Agents", "imageURL": "/assets/images/sidebar/agents.svg", "isAUserSetting": false},
-            {"label": "Articles", "imageURL": "/assets/images/sidebar/articles.svg", "isAUserSetting": false},
-            {"label": "Settings", "imageURL": "/assets/images/sidebar/settings.svg", "isAUserSetting": true},
-            {"label": "Subscription", "imageURL": "/assets/images/sidebar/subscription.svg", "isAUserSetting": true}
+            { "label": "Overview", "imageURL": "/assets/images/sidebar/overview.svg", "isAUserSetting": false, "isActive": true},
+            { "label": "Tickets", "imageURL": "/assets/images/sidebar/tickets.svg", "isAUserSetting": false},
+            { "label": "Ideas", "imageURL": "/assets/images/sidebar/ideas.svg", "isAUserSetting": false},
+            { "label": "Contacts", "imageURL": "/assets/images/sidebar/contacts.svg", "isAUserSetting": false},
+            { "label": "Agents", "imageURL": "/assets/images/sidebar/agents.svg", "isAUserSetting": false},
+            { "label": "Articles", "imageURL": "/assets/images/sidebar/articles.svg", "isAUserSetting": false},
+            { "label": "Settings", "imageURL": "/assets/images/sidebar/settings.svg", "isAUserSetting": true},
+            { "label": "Subscription", "imageURL": "/assets/images/sidebar/subscription.svg", "isAUserSetting": true}
         ],
         "summaryItems" : [
             { "label": "Unresolved", "value": 60 },
@@ -17,11 +17,11 @@
             { "label": "On hold", "value": 64 }
         ],
         "graphData" : [
-            {"label": "Resolved", "value": 449},
-            {"label": "Received", "value": 426},
-            {"label": "Average first response time", "value": "33m"},
-            {"label": "Average response time", "value": "3h 8m"},
-            {"label": "Resolution within SLA", "value": "94%"}
+            { "label": "Resolved", "value": 449},
+            { "label": "Received", "value": 426},
+            { "label": "Average first response time", "value": "33m"},
+            { "label": "Average response time", "value": "3h 8m"},
+            { "label": "Resolution within SLA", "value": "94%"}
         ],
         "unresolvedTickets" : [
             { "status": "Waiting on Feature Request", "value": 4238 },
@@ -30,10 +30,18 @@
             { "status": "Pending", "value": 281 }
         ],
         "ticketActions" : [
-            {"label": "Finish ticket update", "badgeType": 1},
-            {"label": "Create new ticket example", "badgeType": 2},
-            {"label": "Update ticket report", "badgeType": 3}
-        ]
+            { "label": "Finish ticket update", "badgeType": 1},
+            { "label": "Create new ticket example", "badgeType": 2},
+            { "label": "Update ticket report", "badgeType": 3}
+        ],
+        "chartData": {
+            "xValues" : [100,200,300,400,500,600,700,800,900,1000],
+            "today": {
+                "values": [300,700,2000,5000,6000,4000,2000,1000,200,100]
+            },
+            "yesterday": {
+                "values": [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000]
+            }
+        }
     }
-
 }
