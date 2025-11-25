@@ -1,0 +1,34 @@
+{
+    "data" : {
+        "navItems" : [
+            {"label": "Overview", "imageURL": "/assets/images/sidebar/overview.svg", "isAUserSetting": false, "isActive": true},
+            {"label": "Tickets", "imageURL": "/assets/images/sidebar/tickets.svg", "isAUserSetting": false},
+            {"label": "Ideas", "imageURL": "/assets/images/sidebar/ideas.svg", "isAUserSetting": false},
+            {"label": "Contacts", "imageURL": "/assets/images/sidebar/contacts.svg", "isAUserSetting": false},
+            {"label": "Agents", "imageURL": "/assets/images/sidebar/agents.svg", "isAUserSetting": false},
+            {"label": "Articles", "imageURL": "/assets/images/sidebar/articles.svg", "isAUserSetting": false},
+            {"label": "Settings", "imageURL": "/assets/images/sidebar/settings.svg", "isAUserSetting": true},
+            {"label": "Subscription", "imageURL": "/assets/images/sidebar/subscription.svg", "isAUserSetting": true}
+        ],
+        "summaryCards" : [
+            { "label": "Unresolved", "value": 60 },
+            { "label": "Overdue", "value": 16 },
+            { "label": "Open", "value": 43 },
+            { "label": "On hold", "value": 64 }
+        ],
+        "graphData" : [
+            {"label": "Resolved", "value": 449},
+            {"label": "Received", "value": 426},
+            {"label": "Average first response time", "value": "33m"},
+            {"label": "Average response time", "value": "3h 8m"},
+            {"label": "Resolution within SLA", "value": "94%"}
+        ],
+        "unresolvedTickets" : [
+            { "status": "Waiting on Feature Request", "value": 4238 },
+            { "status": "Awaiting Customer Response", "value": 1005 },
+            { "status": "Awaiting Developer Fix", "value": 914 },
+            { "status": "Pending", "value": 281 }
+        ]
+    }
+
+}
